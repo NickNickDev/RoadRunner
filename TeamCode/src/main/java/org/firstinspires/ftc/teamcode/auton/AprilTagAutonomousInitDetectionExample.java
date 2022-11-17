@@ -59,7 +59,7 @@ public class AprilTagAutonomousInitDetectionExample extends LinearOpMode
     int RIGHT = 3;
 
     AprilTagDetection tagOfInterest = null;
-    public int tagIdDectected;
+    public int tagIdDectected; //Li Li added this public variable to be called by autonomous class
 
     @Override
     public void runOpMode()
@@ -177,9 +177,6 @@ public class AprilTagAutonomousInitDetectionExample extends LinearOpMode
             //trajectory
         }
 
-
-        /* You wouldn't have this in your autonomous, this is just to prevent the sample from ending */
-      //  while (opModeIsActive()) {sleep(20);}
     }
 
     void tagToTelemetry(AprilTagDetection detection)

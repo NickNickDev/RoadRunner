@@ -29,7 +29,7 @@ public class AutonomousDrivePeriod extends LinearOpMode {
     private ElapsedTime runTime = new ElapsedTime();
 
     AprilTagAutonomousInitDetectionExample aprilTagAutonomousInitDetection = new AprilTagAutonomousInitDetectionExample();
-    int tagDetected = aprilTagAutonomousInitDetection.tagIdDectected;
+    int tagDetected = aprilTagAutonomousInitDetection.tagIdDectected; //possible values of tagDectected are 1, 2, and 3
 
     private void safeSleep(int milliseconds) {
         runTime.reset();
